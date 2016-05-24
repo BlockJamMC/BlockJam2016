@@ -1,0 +1,132 @@
+/*   
+ * Version: 1.1
+ * Author: Nathan Rosenberg
+*/
+
+@import "mixins.less";
+@import "colors.less";
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+}
+
+.wraper,
+.container {
+    height: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+a {
+    .transition(all .1s ease-in-out);
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+}
+
+.head {
+    height: 100%;
+    background: rgba(3, 36, 36, 0.6);
+    padding-top: 15em;
+    color: white;
+    .bj-logo {
+        display: block;
+        margin: 0 auto 50px auto;
+    }
+    .cs-txt {
+        text-align: center;
+        font-size: 80px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    .soc-buttons {
+        font-size: 25px;
+        margin-top: 50px;
+        text-align: center;
+        .soc-btn {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            display: inline-block;
+            transition: all .1s ease-in-out;
+            margin-right: 10px;
+            i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: @white;
+            }
+            &:active {
+                .box-shadow(none);
+            }
+        }
+        .facebook {
+            background: #3864A3;
+            &:hover {
+                background: darken(#3864A3, 5%);
+            }
+        }
+        .twitch {
+            background: #6542A6;
+            &:hover {
+                background: darken(#6542A6, 5%);
+            }
+        }
+        .twitter {
+            background: #55ACEE;
+            &:hover {
+                background: darken(#55ACEE, 5%);
+            }
+        }
+        .youtube {
+            background: #CF3427;
+            &:hover {
+                background: darken(#CF3427, 5%);
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 20px 0 20px 0;
+    background: #333;
+    color: white;
+    text-align: center;
+    a {
+        color: white;
+        font-weight: 500;
+    }
+}
