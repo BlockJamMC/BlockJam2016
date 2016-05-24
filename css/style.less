@@ -13,8 +13,7 @@ body {
     height: 100%;
 }
 
-.wraper,
-.container {
+.wraper {
     height: 100%;
 }
 
@@ -57,8 +56,18 @@ a {
 
 .head {
     height: 100%;
-    background: rgba(3, 36, 36, 0.6);
+//    background: rgba(3, 36, 36, 0.6);
     padding-top: 15em;
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(3, 36, 36, 0.45), 
+      rgba(3, 36, 36, 0.45)
+    ),
+    /* bottom, image */
+    url(../img/bg.jpg);
+    background-size: cover;
+    padding-top: 20vh;
     color: white;
     .bj-logo {
         display: block;
@@ -130,3 +139,5 @@ a {
         font-weight: 500;
     }
 }
+
+@import "responsive.less";

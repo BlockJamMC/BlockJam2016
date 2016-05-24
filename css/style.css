@@ -11,8 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
 }
-.wraper,
-.container {
+.wraper {
   height: 100%;
 }
 p,
@@ -53,8 +52,10 @@ a:focus {
 }
 .head {
   height: 100%;
-  background: rgba(3, 36, 36, 0.6);
   padding-top: 15em;
+  background: linear-gradient(rgba(3, 36, 36, 0.45), rgba(3, 36, 36, 0.45)), /* bottom, image */ url(../img/bg.jpg);
+  background-size: cover;
+  padding-top: 20vh;
   color: white;
 }
 .head .bj-logo {
@@ -126,4 +127,30 @@ a:focus {
 .footer a {
   color: white;
   font-weight: 500;
+}
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  .head .cs-txt {
+    font-size: 40px;
+  }
+  .head .soc-buttons {
+    font-size: 17px;
+  }
+  .head .soc-buttons .soc-btn {
+    width: 35px;
+    height: 35px;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .head .cs-txt {
+    font-size: 60px;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .head .cs-txt {
+    font-size: 80px;
+  }
 }

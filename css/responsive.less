@@ -1,44 +1,47 @@
 @import "mixins.less";
 @import "colors.less";
+
 /* Extra small devices (phones, less than 768px) */
 
 @media (max-width: 767px) {
-    .header {
-        background: @blue !important;
-        .button-nav {
-            margin-left: 0 !important;
+    .head {
+        .cs-txt {
+            font-size: 40px;
         }
-    }
-    .header .main-nav .nav .nav-item {
-        float: none !important;
-    }
-    .header .main-nav button {
-        margin-right: 0;
-    }
-    .header .main-nav .navbar-collapse {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .nav-pills {
-        & > li {
-            & > a {
-                font-size: 10px;
+        .soc-buttons {
+            font-size: 17px;
+//            margin-top: 25px;
+            .soc-btn {
+                width: 35px;
+                height: 35px;
             }
         }
     }
-    .remove {
-        display: none;
-    }
-    .nav-tabs.nav-justified>li>a {
-        border-radius: 0;
-    }
 }
+
+
 /* Small devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .head {
+        .cs-txt {
+            font-size: 60px;
+        }
+    }
+}
+
+
 /* Medium devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {}
+
+
 /* Large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .head {
+        .cs-txt {
+            font-size: 80px;
+        }
+    }
+}
