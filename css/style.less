@@ -5,9 +5,10 @@
 
 @import "mixins.less";
 @import "colors.less";
+@import 'https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,600';
 html,
 body {
-    font-family: 'Lato', sans-serif;
+    
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     height: 100%;
@@ -17,13 +18,28 @@ body {
     height: 100%;
 }
 
-p,
 h1,
 h2,
 h3,
 h4 {
+    font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
+}
+
+p,a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-size: 24px;
 }
 
 ul {
@@ -50,25 +66,24 @@ a {
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-//    background: url(polina.jpg) no-repeat;
+    //    background: url(polina.jpg) no-repeat;
     background-size: cover;
 }
 
 .head {
     height: 100%;
-//    background: rgba(3, 36, 36, 0.6);
+//        background: rgba(3, 36, 36, 0.6);
     padding-top: 15em;
-    background: 
-    /* top, transparent red, faked with gradient */ 
-    linear-gradient(
-      rgba(3, 36, 36, 0.45), 
-      rgba(3, 36, 36, 0.45)
-    ),
-    /* bottom, image */
+    background: /* top, transparent red, faked with gradient */
+    linear-gradient( rgba(2,19,31, 0.9), rgba(2,19,31, 0.9)), /* bottom, image */
     url(../img/bg.jpg);
     background-size: cover;
     padding-top: 20vh;
     color: white;
+    .upper {
+//        background: rgba(0,0,0,.3);
+//        padding: 70px 0;
+    }
     .bj-logo {
         display: block;
         margin: 0 auto 50px auto;
@@ -78,7 +93,6 @@ a {
         font-size: 80px;
         letter-spacing: 5px;
         text-transform: uppercase;
-        font-weight: 800;
     }
     .soc-buttons {
         font-size: 25px;
@@ -124,6 +138,24 @@ a {
             background: #CF3427;
             &:hover {
                 background: darken(#CF3427, 5%);
+            }
+        }
+    }
+    .sponsors {
+        text-align: center;
+        margin-top: 30px;
+        
+        
+        padding: 40px 0;
+        h2 {
+            margin-bottom: 10px;
+        }
+        img {
+            opacity: 1;
+            .transition(opacity 0.16s ease-in-out);
+            display: inline-block;
+            &:hover {
+                opacity: .8;
             }
         }
     }

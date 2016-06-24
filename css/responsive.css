@@ -2,6 +2,10 @@
 /* Colors */
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
+  .head {
+    padding-top: 10vh;
+    height: auto;
+  }
   .head .cs-txt {
     font-size: 40px;
   }
@@ -11,6 +15,9 @@
   .head .soc-buttons .soc-btn {
     width: 35px;
     height: 35px;
+  }
+  .head .sponsors {
+    margin-top: 20px;
   }
 }
 /* Small devices (tablets, 768px and up) */
