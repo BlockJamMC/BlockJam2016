@@ -139,10 +139,10 @@ a:focus {
   margin-bottom: 10px;
 }
 .head .sponsors img {
-  -webkit-transition: 0.1s ease-in-out;
-  -moz-transition: 0.1s ease-in-out;
-  -ms-transition: 0.1s ease-in-out;
-  -o-transition: 0.1s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
   display: inline-block;
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
