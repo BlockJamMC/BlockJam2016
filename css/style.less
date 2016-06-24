@@ -8,7 +8,6 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,600';
 html,
 body {
-    
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     height: 100%;
@@ -27,8 +26,11 @@ h4 {
     margin: 0;
 }
 
-p,a {
+p,
+a {
     font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
@@ -72,17 +74,17 @@ a {
 
 .head {
     height: 100%;
-//        background: rgba(3, 36, 36, 0.6);
+    //        background: rgba(3, 36, 36, 0.6);
     padding-top: 15em;
     background: /* top, transparent red, faked with gradient */
-    linear-gradient( rgba(2,19,31, 0.9), rgba(2,19,31, 0.9)), /* bottom, image */
+    linear-gradient( rgba(2, 19, 31, 0.9), rgba(2, 19, 31, 0.9)), /* bottom, image */
     url(../img/bg.jpg);
     background-size: cover;
     padding-top: 20vh;
     color: white;
     .upper {
-//        background: rgba(0,0,0,.3);
-//        padding: 70px 0;
+        //        background: rgba(0,0,0,.3);
+        //        padding: 70px 0;
     }
     .bj-logo {
         display: block;
@@ -91,8 +93,8 @@ a {
     .cs-txt {
         text-align: center;
         font-size: 80px;
-        letter-spacing: 5px;
-        text-transform: uppercase;
+        letter-spacing: 3px;
+        //        text-transform: uppercase;
     }
     .soc-buttons {
         font-size: 25px;
@@ -143,17 +145,16 @@ a {
     }
     .sponsors {
         text-align: center;
-        margin-top: 30px;
-        
-        
+        margin-top: 45px;
         padding: 40px 0;
         h2 {
             margin-bottom: 10px;
         }
         img {
             opacity: 1;
-            .transition(opacity 0.16s ease-in-out);
+            transition: opacity 0.16s ease-in-out;
             display: inline-block;
+            -webkit-backface-visibility: hidden;
             &:hover {
                 opacity: .8;
             }
@@ -162,7 +163,7 @@ a {
 }
 
 .footer {
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
     background: #333;
     color: white;
     text-align: center;

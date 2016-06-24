@@ -20,6 +20,11 @@
     margin-top: 20px;
   }
 }
+@media (max-height: 880px) {
+  .head {
+    min-height: 100%;
+  }
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .head .cs-txt {

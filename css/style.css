@@ -25,6 +25,8 @@ h4 {
 p,
 a {
   font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 h1 {
   font-weight: 700;
@@ -77,8 +79,7 @@ a:focus {
 .head .cs-txt {
   text-align: center;
   font-size: 80px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 .head .soc-buttons {
   font-size: 25px;
@@ -131,7 +132,7 @@ a:focus {
 }
 .head .sponsors {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 45px;
   padding: 40px 0;
 }
 .head .sponsors h2 {
@@ -139,17 +140,15 @@ a:focus {
 }
 .head .sponsors img {
   opacity: 1;
-  -webkit-transition: opacity 0.16s ease-in-out;
-  -moz-transition: opacity 0.16s ease-in-out;
-  -ms-transition: opacity 0.16s ease-in-out;
-  -o-transition: opacity 0.16s ease-in-out;
+  transition: opacity 0.16s ease-in-out;
   display: inline-block;
+  -webkit-backface-visibility: hidden;
 }
 .head .sponsors img:hover {
   opacity: .8;
 }
 .footer {
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
   background: #333;
   color: white;
   text-align: center;
@@ -176,6 +175,11 @@ a:focus {
   }
   .head .sponsors {
     margin-top: 20px;
+  }
+}
+@media (max-height: 880px) {
+  .head {
+    min-height: 100%;
   }
 }
 /* Small devices (tablets, 768px and up) */
