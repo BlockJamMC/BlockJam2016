@@ -66,7 +66,7 @@ a:focus {
 }
 .head {
   height: 100%;
-  padding-top: 15em;
+  padding: 70px 0;
   background: linear-gradient(rgba(2, 19, 31, 0.9), rgba(2, 19, 31, 0.9)), /* bottom, image */ url(../img/bg.jpg);
   background-size: cover;
   padding-top: 20vh;
@@ -139,13 +139,18 @@ a:focus {
   margin-bottom: 10px;
 }
 .head .sponsors img {
-  opacity: 1;
-  transition: opacity 0.16s ease-in-out;
+  -webkit-transition: 0.1s ease-in-out;
+  -moz-transition: 0.1s ease-in-out;
+  -ms-transition: 0.1s ease-in-out;
+  -o-transition: 0.1s ease-in-out;
   display: inline-block;
-  -webkit-backface-visibility: hidden;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+  position: relative;
 }
 .head .sponsors img:hover {
-  opacity: .8;
+  -webkit-filter: none;
+  filter: none;
 }
 .footer {
   padding: 20px 0;

@@ -75,7 +75,7 @@ a {
 .head {
     height: 100%;
     //        background: rgba(3, 36, 36, 0.6);
-    padding-top: 15em;
+    padding: 70px 0;
     background: /* top, transparent red, faked with gradient */
     linear-gradient( rgba(2, 19, 31, 0.9), rgba(2, 19, 31, 0.9)), /* bottom, image */
     url(../img/bg.jpg);
@@ -151,12 +151,14 @@ a {
             margin-bottom: 10px;
         }
         img {
-            opacity: 1;
-            transition: opacity 0.16s ease-in-out;
+            .transition(0.1s ease-in-out);
             display: inline-block;
-            -webkit-backface-visibility: hidden;
+            -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+            position: relative;
             &:hover {
-                opacity: .8;
+                -webkit-filter: none;
+                filter: none;
             }
         }
     }
